@@ -6,92 +6,186 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Social links profile</title>
+  <title>Frontend Mentor | Recipe page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     *{
-      margin:0px;
-      padding:0px;
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      
+    }
+  
+  
+
+    body{
+
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      background-color: hsl(30, 18%, 87%);
+      
+
     
     }
-    body{
+    .main{
+      margin:15px;
+      background-color:  hsl(0, 0%, 100%);
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
-      height:100vh;
-      background-color: hsl(0, 0%, 8%);
-  
+
+      border:2px solid black;
+      border-radius: 15px;
+      width: 40%;
+      height: auto;
+      border-style: none;
+      padding:30px;
+
+    }
+    li::marker{
+      color:hsl(14, 45%, 36%);
+      font-weight: bolder;
     }
     img{
-      border-radius: 50%;
-      padding:20px;
-    }
-    .main{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border: 2px solid black;
-      border-radius:3%;
-      padding:3%;
-      color:hsl(0, 0%, 100%);
-      background-color: hsl(0, 0%, 12%);
-      border-style: none;
-    }
-    .main h5{
-      color:hsl(75, 94%, 57%);
-      padding:10px;
-    }
-    p{
-      padding:10px;
-    }
-    button{
-      padding:10px;
-      margin:5px;
-      color:hsl(0, 0%, 100%);
       width:100%;
-      background-color: hsl(0, 0%, 20%);
-      border-radius:8px;
-    }
-    button:hover{
-      background-color: hsl(75, 94%, 57%);
-      cursor:pointer;
-      color:black;
-    }
-    @media device and (max-width:375px){
-.main{
-  display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border: 2px solid black;
-      border-radius:3%;
-      padding:3%;
-      color:hsl(0, 0%, 100%);
-      background-color: hsl(0, 0%, 12%);
-      border-style: none;
-}
+      height:300px;
+      padding:15px;
+      border-radius: 20px;
     }
 
+    p{
+      margin:7px;
+      font-size: 16px;
+    }
+    h1{
+      margin:5px;
+    }
+    .prepare{
+      margin:10px;
+      background-color: hsl(330, 100%, 98%);
+      padding:15px;
+      border-radius: 10px;
+
+    }
+    .prepare li,ul{
+      margin:10px;
+    }
+    .prepare h3{
+      padding:10px;
+     color: hsl(332, 51%, 32%)
+    }
+    .ingredients{
+      margin:10px;
+      padding:5px;
+      border-radius: 10px;
+    }
+    
+    .instruction{
+      margin:10px;
+      padding:15px;
+      border-radius: 10px;
+    }
+    .instruction ol,li{
+      padding:5px;
+    }
+   h2{
+    color:hsl(14, 45%, 36%);;
+   }
+   
+    table td{
+      border-bottom: 1px solid black;
+      
+    }
+    td:last-child{
+      color:hsl(14, 45%, 36%);
+      font-weight:bolder;
+      
+    }
+    table{
+      border-collapse: collapse;
+    }
   </style>
 </head>
 <body>
+  <div class="main">
+  <div class="img">
+    <img src="assets/images/image-omelette.jpeg">
 
- <div class="main">
-  <img src="assets/images/avatar-jessica.jpeg" alt="avatar-jessica" width="100px" height="100px">
-  <h2>Jessica Randall</h2>
-  <h5>London, United Kingdom</h5>
-  <p>  "Front-end developer and avid reader."</p>
-  <button><strong>GitHub</strong></button>
-  <button><strong>Frontend Mentor</strong></button>
-  <button><strong>LinkedIn</strong></button>
-  <button><strong>Twitter</strong></button>
-  <button><strong>Instagram</strong></button>
- </div>
- 
+  </div>
+  <h1> Simple Omelette Recipe</h1>
+  <p>
+    An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+    to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+    <div class="prepare">
+      <h3> Preparation time</h3>
+      <ul>
+        <li> <strong>Total</strong>: Approximately 10 minutes</li>
+        <li><strong>Preparation</strong>: 5 minutes</li>
+        <li><strong>Cooking</strong>: 5 minutes</li>
+      </ul>
+      
+    </div>
+    <div class="ingredients">
+      <h2>Ingredients</h2>
+      <ul>
+        <li> 2-3 large eggs</li>
+        <li>Salt, to taste</li>
+        <li>  Pepper, to taste</li>
+        <li>1 tablespoon of butter or oil</li>
+        <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
+      <hr>
+    </div>
+    <div class="instruction">
+      <h2>Instruction</h2>
+      <ol>
+        <li><strong>Beat the eggs</strong>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+          You can add a tablespoon of water or milk for a fluffier texture.</li>
+        <li><strong>Heat the pan</strong>: Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        <li><strong> the omelette</strong>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+          the eggs evenly coat the surface.</li>
+        <li> <strong> fillings (optional)</strong>: When the eggs begin to set at the edges but are still slightly runny in the 
+          middle, sprinkle your chosen fillings over one half of the omelette.</li>
+        <li> <strong> and serve</strong>: As the omelette continues to cook, carefully lift one edge and fold it over the 
+          fillings. Let it cook for another minute, then slide it onto a plate.
+        </li>
+        <li> <strong>Enjoy</strong>: Serve hot, with additional salt and pepper if needed.</li>
+      </ol>
+      <hr>
+    </div>
+    
+      <h2>Nutrition</h2>
+      <p> The table below shows nutritional values per serving without the additional fillings.</p>
+      <table>
+        <tr>
+          <td> Calories</td>
+          <td>277kcal</td>
+          
+        </tr>
+        <tr>
+          <td>Carbs</td>
+          <td>0g</td>
+          
+        </tr>
+        <tr>
+          <td>Protein</td>
+          <td>20g</td>
+          
+        </tr>
+        <tr>
+          <td>Fat</td>
+          <td>22g</td>
+          
+        </tr>
+      </table>
+
+    </div>
+  </div>
 
 </body>
 </html>
